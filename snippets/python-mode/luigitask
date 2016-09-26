@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: luigitask
+# key: luigitask
+# --
+class $1(luigi.${2:Task}):
+    def requires(self):
+        $3
+
+    def run(self):
+        $4
+
+    def output(self):
+        $5
